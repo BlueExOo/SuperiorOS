@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/SuperiorOS/static/css/main.0d1d3293.css",
+    "main.js": "/SuperiorOS/static/js/main.c185552c.js",
+    "static/media/logo.svg": "/SuperiorOS/static/media/logo.5e1d0d702156de38324311d8ffa4c87c.svg",
+    "static/media/FullStackDev.png": "/SuperiorOS/static/media/FullStackDev.7740ebbf93b6e7c0f704.png",
+    "static/media/Faizaan.jpeg": "/SuperiorOS/static/media/Faizaan.a88824687e2bfac89256.jpeg",
+    "static/media/Founder.jpeg": "/SuperiorOS/static/media/Founder.68bae1dcacf90ea3ba80.jpeg",
+    "static/media/Screenshot-3.webp": "/SuperiorOS/static/media/Screenshot-3.1b807a8a165b2318d450.webp",
+    "static/media/Screenshot-9.webp": "/SuperiorOS/static/media/Screenshot-9.7c9ec9f82d80f363c687.webp",
+    "static/media/Screenshot-7.webp": "/SuperiorOS/static/media/Screenshot-7.5c13d028e4b293adced5.webp",
+    "static/media/leader-dev.jpeg": "/SuperiorOS/static/media/leader-dev.a3a081c490209a118a51.jpeg",
+    "static/media/Screenshot-10.webp": "/SuperiorOS/static/media/Screenshot-10.f175097de835b070df1c.webp",
+    "static/media/Screenshot-8.webp": "/SuperiorOS/static/media/Screenshot-8.7168ed7ef853bc82b73b.webp",
+    "static/media/Screenshot-1.webp": "/SuperiorOS/static/media/Screenshot-1.13b2799a6a40d3d176a5.webp",
+    "static/media/dev.jpeg": "/SuperiorOS/static/media/dev.f71351bafa35912b99cd.jpeg",
+    "static/media/Screenshot-4.webp": "/SuperiorOS/static/media/Screenshot-4.f96afc11da92cec510e5.webp",
+    "static/media/Screenshot-2.webp": "/SuperiorOS/static/media/Screenshot-2.dcb7503ffc5fcf2b294f.webp",
+    "static/media/Screenshot-6.webp": "/SuperiorOS/static/media/Screenshot-6.7defbdbf7866ed617564.webp",
+    "static/media/Screenshot-5.webp": "/SuperiorOS/static/media/Screenshot-5.a05e6710fbbd8333a7c3.webp",
+    "static/media/Home-bg.webp": "/SuperiorOS/static/media/Home-bg.8997e5c3fa3fb2d32509.webp",
+    "index.html": "/SuperiorOS/index.html",
+    "main.0d1d3293.css.map": "/SuperiorOS/static/css/main.0d1d3293.css.map",
+    "main.c185552c.js.map": "/SuperiorOS/static/js/main.c185552c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d1d3293.css",
+    "static/js/main.c185552c.js"
+  ]
+}
