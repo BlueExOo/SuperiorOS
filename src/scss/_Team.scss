@@ -1,0 +1,139 @@
+.team-container {
+    background-color: var(--card-color);
+
+    .container {
+        max-width: 1170px;
+        margin: auto;
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+
+            .team-items {
+                display: flex;
+                flex-wrap: wrap;
+                flex-basis: 100%;
+                max-width: 100%;
+                justify-content: space-around;
+
+                .item {
+                    flex-basis: calc(25% - 30px);
+                    max-width: calc(25% - 30px);
+                    margin-bottom: 40px;
+                    transition: var(--transition);
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+
+                    &:hover {
+                        transform: translateY(-10px);
+                    }
+
+                    &:hover .info {
+                        transform: translateY(-20px);
+                    }
+
+                    .inner {
+                        position: relative;
+                        z-index: 15;
+                        padding: 0 15px;
+
+                        .info {
+                            background-color: var(--card-color);
+                            text-align: center;
+                            padding: 20px 15px;
+                            border-radius: 10px;
+                            transition: var(--transition);
+                            margin-top: -40px;
+
+                            h3 {
+                                margin: 0;
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: var(--teal);
+                            }
+
+                            p {
+                                font-size: 16px;
+                                font-weight: 400;
+                                color: var(--teal);
+                                margin: 10px 0 0;
+                            }
+
+                            .social-icons {
+                                padding: 15px;
+
+                                a {
+                                    display: inline-block;
+                                    width: 28px;
+                                    height: 28px;
+                                    background-color: var(--teal-background);
+                                    color: var(--dark-teal);
+                                    border-radius: 50%;
+                                    margin: 0 8px;
+                                    text-align: center;
+                                    line-height: 35px;
+                                    font-size: 18px;
+                                    transition: var(--transition);
+
+                                    &:hover {
+                                        box-shadow: var(--elevate-shadow);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .btn {
+                display: inline-block;
+                text-decoration: none;
+                background-color: var(--dark-teal);
+                color: var(--teal);
+                padding: .75rem 1rem;
+                border-radius: .5rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .team-container {
+        .container {
+            .row {
+                .team-items {
+                    .item {
+                        flex-basis: calc(50% - 30px);
+                        max-width: calc(50% - 30px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .team-container {
+        .container {
+            .row {
+                .team-items {
+                    .item {
+                        flex-basis: 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

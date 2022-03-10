@@ -1,0 +1,99 @@
+.home {
+    background-color: var(--teal-background);
+    z-index: 1;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+
+            h2 {
+                color: var(--dark-teal);
+                text-align: center;
+                text-transform: capitalize;
+            }
+
+            .buttons-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+                padding: 0 .5rem;
+
+                .buttons {
+                    a {
+                        display: inline-block;
+                        text-decoration: none;
+                        background-color: var(--dark-teal);
+                        color: var(--teal);
+                        padding: .75rem 1rem;
+                        border-radius: .5rem;
+                        font-weight: bold;
+                        transition: var(--transition);
+
+                        &:hover {
+                            box-shadow: var(--elevate-shadow);
+                        }
+                    }
+                }
+            }
+
+            p {
+                color: var(--dark-teal);
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
+
+        .extra-image {
+            img {
+                max-inline-size: 100%;
+                block-size: auto;
+            }
+        }
+    }
+
+    @media only screen and (min-device-width: 768px) {
+        margin: 2rem;
+        border-radius: 1rem;
+
+        .container {
+            .title-container {
+                h2 {
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-device-width: 1200px) {
+        margin: 0 5rem;
+
+        .container {
+            flex-direction: row;
+            gap: 1rem;
+            padding: 2rem 4rem;
+
+            .title-container {
+                align-items: flex-start;
+
+                h2 {
+                    text-align: start;
+                }
+            }
+
+            .extra-image {
+                img {
+                    height: 25rem;
+                    max-inline-size: none;
+                }
+            }
+        }
+    }
+}

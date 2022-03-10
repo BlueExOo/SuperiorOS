@@ -1,0 +1,96 @@
+.features-container {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        .features {
+            background-color: var(--card-color);
+            padding: 2rem;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            transition: var(--transition);
+            text-align: center;
+
+            &:hover {
+                box-shadow: var(--elevate-shadow);
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                align-items: center;
+                justify-content: center;
+            }
+
+            p {
+                text-transform: capitalize;
+                color: var(--light-blue);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .3rem;
+            }
+
+            h4 {
+                color: var(--dark-teal);
+                font-size: 2rem;
+            }
+
+            .image {
+                img {
+                    max-inline-size: 100%;
+                    block-size: auto;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                color: var(--teal);
+                gap: .5rem;
+
+                svg {
+                    font-size: 1.4rem;
+                    transform: translateY(0.35rem);
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-device-width: 768px) {
+        .container {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "one one one one" "two two three three";
+
+            .features {
+                &:nth-of-type(1) {
+                    grid-area: one;
+                }
+
+                &:nth-of-type(2) {
+                    grid-area: two;
+                }
+
+                &:nth-of-type(3) {
+                    grid-area: three;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-device-width: 1200px) {
+        .container {
+            .features {
+                h4 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
