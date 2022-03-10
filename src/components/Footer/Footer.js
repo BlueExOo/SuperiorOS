@@ -1,27 +1,9 @@
 import React from "react";
-import { BsGithub, BsTelegram, BsTwitter } from "react-icons/bs";
+import ItemsContainer from "./ItemsContainer";
+import SocialIcons from "./SocialIcons";
+import { Icons } from "./Menus";
 
 const Footer = () => {
-  const data = [
-    {
-      type: "DISCOVER",
-      subTypes: ["Overview", "Features", "FAQ"],
-    },
-    {
-      type: "COMMUNITY",
-      subTypes: ["GitHub", "Telegram", "Superior OS Walls"],
-    },
-    {
-      type: "DEVELOPERS",
-      subTypes: ["Maintainer", "Gerrit", "Crowdin"],
-    },
-    {
-      type: "SUPPORT",
-      subTypes: ["Paypal", "UPI", "Paytm"],
-    },
-  ];
-  const socialLinks = [<BsGithub />, <BsTelegram />, <BsTwitter />];
-
   return (
     <footer className="py-3 mx-3">
       <div className="brand-container">
@@ -34,27 +16,23 @@ const Footer = () => {
           Software
         </p>
 
-        <ul className="social-links">
-          {socialLinks.map((link, index) => (
-            <li key={index}>{link}</li>
-          ))}
-        </ul>
+        <SocialIcons Icons={Icons} />
+
+        <span className="copy-right">
+          CopyRight &copy; 2022
+          <span> SuperiorOS Project </span> <br />
+          All Rights Reserved Ahmed
+          <a
+            href="https://github.com/BlueExOo"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            (BlueExOo)
+          </a>
+        </span>
       </div>
       <div className="links">
-        {data.map(({ type, subTypes }, index) => {
-          return (
-            <div className="link" key={index}>
-              <h3 className="title">{type}</h3>
-              <ul>
-                {subTypes.map((type, index) => (
-                  <li key={index}>
-                    <a href="#">{type}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          );
-        })}
+        <ItemsContainer />
       </div>
     </footer>
   );

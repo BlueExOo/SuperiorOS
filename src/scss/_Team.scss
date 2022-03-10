@@ -68,15 +68,15 @@
 
                                 a {
                                     display: inline-block;
-                                    width: 28px;
-                                    height: 28px;
+                                    width: 30px;
+                                    height: 30px;
                                     background-color: var(--teal-background);
                                     color: var(--dark-teal);
                                     border-radius: 50%;
-                                    margin: 0 8px;
+                                    margin: 0 6px;
                                     text-align: center;
-                                    line-height: 35px;
-                                    font-size: 18px;
+                                    line-height: 38px;
+                                    font-size: 25px;
                                     transition: var(--transition);
 
                                     &:hover {
@@ -103,6 +103,10 @@
                 padding: .75rem 1rem;
                 border-radius: .5rem;
                 font-weight: bold;
+                border: 0;
+                outline: 0;
+                cursor: pointer;
+                transition: var(--transition);
             }
         }
     }

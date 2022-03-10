@@ -1,9 +1,12 @@
 nav {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
     background-color: var(--teal-background);
     transition: var(--transition);
 
     .py-3 {
-        padding: 2rem 0;
+        padding: 0;
     }
 
     .container {
@@ -68,9 +71,23 @@ nav {
 
                 li {
                     a {
+                        display: inline-flex;
+                        align-items: center;
+                        column-gap: 1rem;
+                        font-size: .813rem;
+                        font-weight: 500;
+                        transition: var(--transition);
                         text-decoration: none;
                         text-transform: uppercase;
-                        color: var(--light-blue);
+                        color: var(--light-teal);
+
+                        & svg {
+                            font-size: 1.15rem;
+                        }
+
+                        &:hover {
+                            color: #115e59;
+                        }
                     }
                 }
 

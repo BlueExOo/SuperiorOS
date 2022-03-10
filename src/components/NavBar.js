@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo.svg";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { TiThMenuOutline } from "react-icons/ti";
+import { BiHomeAlt } from "react-icons/bi";
+import { MdOutlineFeaturedPlayList, MdOutlineScreenshot } from "react-icons/md";
+import { GoDeviceMobile } from "react-icons/go";
+import { RiTeamFill } from "react-icons/ri";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import { MdClose } from "react-icons/md";
 
@@ -19,7 +23,7 @@ const NavBar = ({ changeTheme, currentTheme }) => {
             {navState ? (
               <MdClose onClick={() => setNavState(false)} />
             ) : (
-              <GiHamburgerMenu
+              <TiThMenuOutline
                 onClick={(e) => {
                   e.stopPropagation();
                   setNavState(true);
@@ -37,19 +41,30 @@ const NavBar = ({ changeTheme, currentTheme }) => {
           <div className={`links ${navState ? "responsive-toggle" : ""}`}>
             <ul>
               <li>
-                <a href="#home">Home</a>
+                <a href="#home">
+                  <BiHomeAlt /> Home
+                </a>
               </li>
               <li>
-                <a href="#features">Features</a>
+                <a href="#features">
+                  {" "}
+                  <MdOutlineFeaturedPlayList /> Features
+                </a>
               </li>
               <li>
-                <a href="#screenshots">Screenshots</a>
+                <a href="#screenshots">
+                  <MdOutlineScreenshot /> Screenshots
+                </a>
               </li>
               <li>
-                <a href="#devices">Devices</a>
+                <a href="#devices">
+                  <GoDeviceMobile /> Devices
+                </a>
               </li>
               <li>
-                <a href="#team">Team</a>
+                <a href="#team">
+                  <RiTeamFill /> Team
+                </a>
               </li>
               <li onClick={changeTheme} className="color-mode">
                 {currentTheme === "dark" ? (

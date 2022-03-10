@@ -41,7 +41,7 @@ footer {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border-radius: 2rem;
+                border-radius: 3rem;
                 transition: var(--transition);
 
                 &:hover {
@@ -54,8 +54,30 @@ footer {
 
                 svg {
                     color: white;
-                    font-size: 1.3rem;
+                    font-size: 1.2rem;
                 }
+
+                a {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .copy-right {
+            color: var(--red);
+            line-height: 2;
+
+            span {
+                color: var(--dark-teal);
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 700;
+                color: var(--dark-teal);
             }
         }
     }
@@ -82,7 +104,7 @@ footer {
                 li {
                     a {
                         text-decoration: none;
-                        color: var(--light-blue);
+                        color: var(--light-teal);
                     }
                 }
             }

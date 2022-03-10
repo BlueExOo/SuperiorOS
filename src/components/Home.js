@@ -18,10 +18,9 @@ const Home = () => {
             </div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-            quibusdam mollitia delectus fuga perspiciatis aliquam beatae,
-            placeat minus, assumenda officiis, sunt id consequatur. Fuga
-            suscipit nemo veritatis esse adipisci inventore!
+            Superior OS is a Custom ROM based on AOSP, with a bunch of special
+            features. The main aim of this ROM is to deliver lightning fast
+            experience with stability, security and good battery backup
           </p>
         </div>
         <div className="extra-image">

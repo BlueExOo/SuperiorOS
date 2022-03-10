@@ -1,9 +1,9 @@
 import React from "react";
 import BgImg from "../assets/bg-img.png";
 import None from "../assets/Maintainers/none.png";
-import { BsCodeSlash, BsGithub, BsTelegram } from "react-icons/bs";
+import { BsGithub, BsTelegram } from "react-icons/bs";
 
-const Maintainers = () => {
+export const Maintainers = () => {
   return (
     <section className="maintainers-container py-3 mx-3">
       <h1 className="heading-title"> Official Maintainers</h1>

@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700;800&display=swap");
 
 :root {
-    --teal-background: #99f6e4;
-    --teal-400: #2dd4bf;
+    --teal-background: #2dd4bf;
+    --teal-400: #14b8a6;
     --dark-teal: #134e4a;
-    --light-blue: #304a58;
+    --light-teal: #0d9488;
     --red: #f94144;
     --teal: #14b8a6;
     --transition: 0.5s ease-in-out;
@@ -19,12 +19,12 @@
 [data-theme="dark"] {
     --background: black;
     --dark-teal: #115e59;
-    --light-blue: #5eead4;
+    --light-teal: #5eead4;
     --teal-400: #12131d;
     --teal-background: #12131d;
     --card-color: #12131d;
     --card-color2: #12131d;
-    --red: #12131d;
+    --red: #b9bac9;
     --svg-color: #8eecf5;
     --elevate-shadow: rgb(13,148,136) 0px 25px 50px -12px;
 }
@@ -52,7 +52,7 @@ body {
     font-size: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
-    color: var(--dark-teal);
+    color: var(--teal);
     text-align: center;
     font-weight: 700;
 }
