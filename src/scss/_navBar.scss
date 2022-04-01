@@ -2,7 +2,7 @@ nav {
     width: 100%;
     position: fixed;
     z-index: 100;
-    background-color: var(--teal-background);
+    background-color: var(--card-color);
     transition: var(--transition);
 
     .py-3 {
@@ -21,7 +21,7 @@ nav {
             gap: .3rem;
 
             img {
-                width: 160px;
+                width: 120px;
             }
         }
     }
@@ -40,12 +40,12 @@ nav {
             }
 
             .sun {
-                color: #ffff00;
+                color: var(--text-color-alt);
                 font-size: 1.4rem;
             }
 
             .moon {
-                color: #0000ff;
+                color: var(--text-color);
                 font-size: 1.4rem;
             }
         }
@@ -56,7 +56,7 @@ nav {
             right: 0;
             top: 0;
             height: 100vh;
-            background-color: var(--background);
+            background-color: var(--container);
             visibility: hidden;
             transition: var(--transition);
             opacity: 0;
@@ -79,30 +79,31 @@ nav {
                         transition: var(--transition);
                         text-decoration: none;
                         text-transform: uppercase;
-                        color: var(--light-teal);
+                        color: var(--text-color-alt);
 
                         & svg {
                             font-size: 1.15rem;
                         }
 
                         &:hover {
-                            color: #115e59;
+                            color: #FE6655;
                         }
                     }
                 }
 
                 .sun {
-                    color: #ffff00;
+                    color: var(--text-color-alt);
                     font-size: 1.4rem;
                 }
 
                 .moon {
-                    color: #0000ff;
+                    color: var(--text-color);
                     font-size: 1.4rem;
                 }
 
                 .color-mode {
                     display: none;
+                    cursor: pointer;
                 }
             }
         }
@@ -113,10 +114,14 @@ nav {
             opacity: 1;
             z-index: 10;
         }
+
+        .nav-icon {
+            color: var(--text-color);
+        }
     }
 
     @media only screen and (min-device-width: 1200px) {
-        background-color: var(--background);
+        background-color: var(--container);
         margin: 2rem;
         margin-top: 0;
 

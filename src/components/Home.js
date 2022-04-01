@@ -1,5 +1,6 @@
 import React from "react";
 import HomeImg from "../assets/homeBg.png";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
@@ -7,14 +8,29 @@ const Home = () => {
       <div className="container py-3 mx-3">
         <div className="title-container">
           <h2>
-            Welcome <br /> To SuperiorOS Project
+            <Typewriter
+              options={{
+                strings: [
+                  `<span>Welcome To SuperiorOS Project</span>`,
+                  `<span>Stable</span>`,
+                  `<span>Customizable</span>`,
+                  `<span>Secure</span>`,
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </h2>
           <div className="buttons-container">
             <div className="buttons">
-              <a href="">DownLoad</a>
+              <a href="https://sourceforge.net/projects/superioros/">
+                DownLoad
+              </a>
             </div>
             <div className="buttons">
-              <a href="">Official Devices</a>
+              <a href="https://github.com/SuperiorOS-Devices">
+                Official Devices
+              </a>
             </div>
           </div>
           <p>
@@ -23,7 +39,7 @@ const Home = () => {
             experience with stability, security and good battery backup
           </p>
         </div>
-        <div className="extra-image">
+        <div className="extra-image" data-aos="flip-left">
           <img src={HomeImg} alt="" />
         </div>
       </div>

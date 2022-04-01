@@ -5,7 +5,7 @@ import { Icons } from "./Menus";
 
 const Footer = () => {
   return (
-    <footer className="py-3 mx-3">
+    <footer className="py-3 mx-3" data-aos="fade-up">
       <div className="brand-container">
         <div className="brand">
           <span>#Be</span>

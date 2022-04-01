@@ -10,7 +10,7 @@ import Img4 from "../assets/Team/Dev.jpeg";
 const Team = () => {
   const [show, setShow] = useState(false);
   return (
-    <section className="team-container py-3 mx-3" id="team">
+    <section className="team-container py-3 mx-3" id="team" data-aos="zoom-in">
       <div className="container">
         <h1 className="heading-title">Team</h1>
 

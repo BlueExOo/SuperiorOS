@@ -1,32 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700;800&display=swap");
 
 :root {
-    --teal-background: #2dd4bf;
-    --teal-400: #14b8a6;
-    --dark-teal: #134e4a;
-    --light-teal: #0d9488;
+    --main-color: #FC7B32;
+    --main-color-alt: #FC576E;
+    --text-color: #FF8227;
+    --text-color-alt: #f8445c;
     --red: #f94144;
-    --teal: #14b8a6;
+    --title-color: #FC7B32;
     --transition: 0.5s ease-in-out;
     --fixed-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     --elevate-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    --background: white;
+    --container: white;
     --card-color: rgb(241, 240, 240);
     --card-color2: white;
-    --svg-color: black;
+    --svg-color: #FC576E;
 }
 
 [data-theme="dark"] {
-    --background: black;
-    --dark-teal: #115e59;
-    --light-teal: #5eead4;
-    --teal-400: #12131d;
-    --teal-background: #12131d;
+    --container: black;
+    --text-color: #FE6655;
+    --text-color-alt: #FC30B0;
+    --main-color-alt: #f8445c;
+    --main-color: #12131d;
     --card-color: #12131d;
     --card-color2: #12131d;
     --red: #b9bac9;
-    --svg-color: #8eecf5;
-    --elevate-shadow: rgb(13,148,136) 0px 25px 50px -12px;
+    --svg-color: #FE6655;
+    --elevate-shadow: rgb(252, 87, 110) 0px 25px 50px -12px;
 }
 
 * {
@@ -44,7 +44,7 @@ body {
 }
 
 .app {
-    background-color: var(--background);
+    background-color: var(--container);
     transition: var(--transition);
 }
 
@@ -52,7 +52,7 @@ body {
     font-size: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
-    color: var(--teal);
+    color: var(--title-color);
     text-align: center;
     font-weight: 700;
 }
@@ -81,7 +81,7 @@ ul {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #14b8a6;
+    background-color: #FC576E;
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 1080px) {

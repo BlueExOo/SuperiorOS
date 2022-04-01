@@ -42,28 +42,27 @@ const NavBar = ({ changeTheme, currentTheme }) => {
             <ul>
               <li>
                 <a href="#home">
-                  <BiHomeAlt /> Home
+                  <BiHomeAlt className="nav-icon" /> Home
                 </a>
               </li>
               <li>
                 <a href="#features">
-                  {" "}
-                  <MdOutlineFeaturedPlayList /> Features
+                  <MdOutlineFeaturedPlayList className="nav-icon" /> Features
                 </a>
               </li>
               <li>
                 <a href="#screenshots">
-                  <MdOutlineScreenshot /> Screenshots
+                  <MdOutlineScreenshot className="nav-icon" /> Screenshots
                 </a>
               </li>
               <li>
                 <a href="#devices">
-                  <GoDeviceMobile /> Devices
+                  <GoDeviceMobile className="nav-icon" /> Devices
                 </a>
               </li>
               <li>
                 <a href="#team">
-                  <RiTeamFill /> Team
+                  <RiTeamFill className="nav-icon" /> Team
                 </a>
               </li>
               <li onClick={changeTheme} className="color-mode">

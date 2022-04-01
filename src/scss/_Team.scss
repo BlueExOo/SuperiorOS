@@ -53,13 +53,13 @@
                                 margin: 0;
                                 font-size: 18px;
                                 font-weight: 600;
-                                color: var(--teal);
+                                color: var(--text-color);
                             }
 
                             p {
                                 font-size: 16px;
                                 font-weight: 400;
-                                color: var(--teal);
+                                color: var(--text-color);
                                 margin: 10px 0 0;
                             }
 
@@ -70,43 +70,19 @@
                                     display: inline-block;
                                     width: 30px;
                                     height: 30px;
-                                    background-color: var(--teal-background);
-                                    color: var(--dark-teal);
+                                    background-color: var(--main-color-alt);
+                                    color: #fff;
                                     border-radius: 50%;
                                     margin: 0 6px;
                                     text-align: center;
                                     line-height: 38px;
                                     font-size: 25px;
                                     transition: var(--transition);
-
-                                    &:hover {
-                                        box-shadow: var(--elevate-shadow);
-                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
-        }
-
-        .button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .btn {
-                display: inline-block;
-                text-decoration: none;
-                background-color: var(--dark-teal);
-                color: var(--teal);
-                padding: .75rem 1rem;
-                border-radius: .5rem;
-                font-weight: bold;
-                border: 0;
-                outline: 0;
-                cursor: pointer;
-                transition: var(--transition);
             }
         }
     }

@@ -7,7 +7,11 @@ import Feature4 from "../assets/Features/Features-4.png";
 
 const Features = () => {
   return (
-    <section className="features-container py-3 mx-3" id="features">
+    <section
+      className="features-container py-3 mx-3"
+      id="features"
+      data-aos="zoom-out-down"
+    >
       <h1 className="heading-title">Features</h1>
 
       <div className="container">

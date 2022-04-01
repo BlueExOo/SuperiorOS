@@ -30,7 +30,7 @@
 
             p {
                 text-transform: capitalize;
-                color: var(--light-teal);
+                color: var(--text-color);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -38,7 +38,7 @@
             }
 
             h4 {
-                color: var(--dark-teal);
+                color: var(--text-color-alt);
                 font-size: 2rem;
             }
 
@@ -52,7 +52,7 @@
             a {
                 text-decoration: none;
                 font-size: 1.5rem;
-                color: var(--teal);
+                color: var(--text-color-alt);
                 gap: .5rem;
 
                 svg {

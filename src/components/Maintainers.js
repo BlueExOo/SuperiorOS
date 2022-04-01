@@ -1,5 +1,5 @@
 import React from "react";
-import BgImg from "../assets/bg-img.png";
+import BgImg from "../assets/Maintainers/logo-bg.png";
 import None from "../assets/Maintainers/none.png";
 import { BsGithub, BsTelegram } from "react-icons/bs";
 
